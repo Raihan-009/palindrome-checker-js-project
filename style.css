@@ -93,6 +93,10 @@ body .background .content button {
   opacity: 0.7;
 }
 
+body .background .content .active {
+  opacity: 1;
+}
+
 body .background .output {
   display: none;
   font-size: 25px;

@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,6 +86,12 @@ body .background .content input::placeholder {
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  body .background .content input {
+    text-align: center;
+  }
+}
+
 body .background .content button {
   background-color: #42e3ff;
   width: 102%;
@@ -102,6 +113,7 @@ body .background .output {
   font-size: 25px;
   margin-top: 20px;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 body .background .output span {

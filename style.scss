@@ -1,3 +1,4 @@
+@import "./breakpoints.scss";
 body{
     display: flex;
     justify-content: center;
@@ -44,6 +45,9 @@ body{
                 &::placeholder {
                     text-align: center;
                 }
+                @include media("<=sm"){
+                    text-align: center;
+                }
                 
             }
             
@@ -71,6 +75,7 @@ body{
             span{
                 color: rgb(20, 219, 202);
             }
+            margin-bottom: 0px;
         }
     }
 }

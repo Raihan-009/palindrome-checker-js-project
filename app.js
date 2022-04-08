@@ -1,5 +1,6 @@
 const inputText = document.querySelector(".input-text");
-checkButton = document.querySelector(".check-button");
+const buttonInfo = document.querySelector("button");
+buttonInfo.disabled = true;
 outputText = document.querySelector(".output");
 let filterText;
 let inverseText;
@@ -8,13 +9,13 @@ inputText.addEventListener("keyup", () => {
   filterText = inputText.value.toLowerCase().replace(/[^A-Z0-9]/gi, "");
   //   console.log(filterText);
   if (filterText) {
-    return checkButton.classList.add("active");
+    return (buttonInfo.disabled = false);
   }
-  checkButton.classList.remove("active");
+  buttonInfo.disabled = true;
   outputText.style.display = "none";
 });
 
-checkButton.addEventListener("click", () => {
+buttonInfo.addEventListener("click", () => {
   inverseText = filterText.split("").reverse().join("");
   console.log(filterText);
   console.log(inverseText);
